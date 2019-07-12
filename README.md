@@ -12,6 +12,8 @@
 - [paciorek's CV/Resume template](http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
 - [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html)
 
+*注：由于使用到 `fontspec` 包，编译器需选择 XeLaTeX。*
+
 ## 特性
 
 - 极其容易定制和扩展 (`res`模板中枪倒地...)
@@ -25,10 +27,10 @@
 
 ## 使用方法
 
-1. ShareLaTeX 在线编译
+1. OverLeaf 在线编译
 2. 使用较新的 \LaTeX\ 发行版在本地计算机编译
 
-如果确定只需要中文简历的话单独克隆 `zh_CN` 分支即可, 需要注意的是该分支包含 Adobe 的宋楷黑仿四套中文字体，体积较大，如果本地安装有Adobe这四套字体的使用 master 英文模板即可。
+如果确定只需要中文简历的话单独克隆 `master` 分支即可, 需要注意的是该分支包含 Adobe 的宋楷黑仿四套中文字体，压缩包约为37MB。[下载地址](https://github.com/hijiangtao/resume/releases)
 
 ```
 git clone https://github.com/hijiangtao/resume.git --branch master --depth 1 --single-branch <folder>
