@@ -23,7 +23,7 @@
 
 ### 效果输出
 
-![resume-zh_CN.png](./resume-zh_CN.png)
+![resume-zh_CN.png](./resume.preview.png)
 
 ## 使用方法
 
