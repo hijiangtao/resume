@@ -11,13 +11,9 @@
 \usepackage{geometry}
 \usepackage{multicol}
 \usepackage{tabularray}
-\usepackage{enumitem}
 
-
-\geometry{a4paper,left=1.5cm,right=1.5cm,top=1.2cm,bottom=1.2cm} % 修改页边距，使得内容在一页范围内
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
-
 
 
 
@@ -55,15 +51,15 @@
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
 
 \section{个人总结}
-擅长\textbf{C++}语言，对\textbf{常用数据结构和算法}具有敏锐的直觉与兴趣。曾获得\textbf{ ACM-ICPC 银奖}、\textbf{高教杯数学建模全国二等奖}以及\textbf{本科国家奖学金}。
+我擅长\textbf{数据结构}，常用\textbf{C++}语言，对方法和代码优化具有敏锐的直觉与兴趣。曾获得\textbf{ ACM-ICPC 银奖}、\textbf{高教杯数学建模全国二等奖}以及\textbf{本科国家奖学金}。我也热衷于技术社区的互动，积极参与博客与 GitHub 项目的编写，并专注于如 ChatGPT 等前沿技术的探索。
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
 
-\datedsubsection{\textbf{兰州大学},\textbf{计算机科学与技术},\textit{学士}}{2015.9 - 2019.6}
+\datedsubsection{\textbf{兰州大学},\textbf{计算机科学与技术}}{2015.9 - 2019.6}
 学业成绩排名2/69(前5\%)，国家奖学金，优秀学生一等奖学金，学生标兵，兰州大学优秀毕业生
 \datedsubsection{\textbf{华中科技大学},\textbf{计算机科学与技术},\textit{在读硕士研究生}}{2019.9 - 2025.6}
-学业成绩排名前50\%，一等学业奖学金，共青团先进个人，预计2025年6月毕业。保送直博，直博转硕
+一等学业奖学金，共青团先进个人，预计2025年6月毕业。保送直博，直博转硕，方向不感兴趣
 
 
 % \begin{onehalfspacing}
@@ -98,20 +94,20 @@
 \section{技术能力}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-	\item \textbf{编程语言和工具}: 熟练掌握 C++ / 掌握 Python / JavaScript / Git / CET-6
-	\item \textbf{专业技能}：了解 Linux / 计算机网络 / 操作系统 / SQL
+	\item \textbf{编程语言和工具}: C++ / Python / MatLab / JavaScript / ChatGPT / Git / Latex / CET-6
+	\item \textbf{科班技术}：Linux / 计算机网络 / 操作系统 / SQL / 汇编
 \end{itemize}
 
 % \end{itemize}
 
+
 \section{项目经历}
 \datedsubsection{\textbf{基于Swin Transformer方法的脑损伤全脑血管的分割和重建}}{}
 \begin{itemize}
-	\item \textbf{问题和描述}：三维图像血管分割和重建问题。血管存在二维和三维上的边缘断裂，信号不连续，干扰信号等问题。数据为三维数据，数据量极大，而且血管直径跨越多个数量级且结构复杂。
-	\item \textbf{3D特征提取网络的构建}：针对二维和三维信号不连续问题，学习图像中的上下文相关性，实现包含连通性和拓扑结构的完整分割。
-	\item \textbf{多尺度的特征提取}：通过层次化构建提取多尺度特征。其滑动窗口的多头自注意模块 (SW-MSA) 促进了窗口间的信息交互，并大幅降低计算量，解决了超大三维图像数据集分割速度慢的问题。
-	\item \textbf{运行环境}：网络使用 Pytorch 实现。实验在配备 8 个 NVIDIA Tesla V100 GPU 32GB 的服务器上并行训练。
-	\item \textbf{评估指标}：采用Accuracy、Precision、Recall、F1、clDice等参数进行评估。
+	\item 针对图像二维上血管中空和边缘缺失、三维上血管损伤等因素导致的血管信号不连续性，以及局部位置血管信背比低和干扰信号带来的血管识别的问题，SwinT通过学习图像中的上下文相关性，实现血管网络的连通性和拓扑结构的完整分割。
+	\item 针对血管血管直径跨越多个数量级且结构复杂的问题，SwinT通过层次化构建提取多尺度血管特征。其滑动窗口的多头自注意模块 (SW-MSA) 促进了窗口间的信息交互，并大幅降低计算量，解决了超大三维图像数据集分割速度慢的问题。
+	\item 针对损伤血管数据的复杂结构及其标注困难的问题，采用健康全脑血管数据的预训练模型，并对难识别血管给予更高的权重。通过 SAM2的零样本学习迁移能力，可便捷获得分割结果作为参考。
+	\item 对血管图进行图分析，运用图论方法评估其特性，并构建模型以精确模拟真实的血管网络结构。
 \end{itemize}
 
 \datedsubsection{\textbf{兰州大学程序设计竞赛等多项编程比赛的组织与出题}}{}
@@ -119,7 +115,6 @@
 	\item \textbf{团队协作}：通过团队交流提升题目设计的质量，进行交叉验题，确保项目严格按照截止日期推进。
 	\item \textbf{规范化流程}：利用Polygon平台进行出题，设计极限数据，不同解法在比赛运行平台进行多重测试。
 	\item \textbf{创新性和行业贡献}：挖掘新的问题和算法场景，探索不同数据范围和约束下的解法，致力于做具有成就感和行业价值的事情。
-	\item \textbf{个人成长}：在经历500多道题的经典算法题目学习基础上，共参与出题20余道，参与验题30余道，对动态规划、图论、搜索、树等数据结构和算法有更深了解，精通常用的计算机数据结构和算法。
 \end{itemize}
 
 % \section{\faHeartO\ 项目/作品摘要}
@@ -135,10 +130,9 @@
 \section{社区参与/实践其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item \textbf{积极参与社区交流}：博客撰写Atcoder、CodeForces等编程竞赛赛后个人题解，并与国内外同行交流算法。天梯赛作为团队队长，归纳总结算法题型并开源。针对格式转换和翻译格式等问题，提供具体解决方案并开源。另外，博客探讨算法和数理知识的证明和应用，收获上万阅读量。
-  \item \textbf{乐于学习和使用前沿技术}：专注于如 ChatGPT 等前沿技术的探索，用于代码生成、修改和纠错等应用。日常使用OI-Wiki系统学习和查找算法，RSSHub订阅优质资源。
-  \item \textbf{经常参与动手实践}：曾参与机器人竞赛创意比赛，设计附带底轮的垃圾桶的路径移动，提升软硬件设计与算法结合的实践能力。
-  
+  \item \textbf{乐于参与社区讨论}：撰写编程竞赛赛后个人题解，探讨算法和数理知识的证明和应用，并与国内外同行交流。
+  \item \textbf{乐于参与GitHub项目的开源和应用}。专注于批量 GitHub Markdown 转 PDF 和微信公众号网页转 PDF 等自动化技术，解决其中技术难题，开源相关工具，为复习八股文的同学提供优质资源。
+  \item \textbf{乐于参与动手实践}。曾参与机器人竞赛创意比赛，设计附带底轮的垃圾桶的路径移动，提升软硬件设计与算法结合的实践能力。
 \end{itemize}
 
 %% Reference
