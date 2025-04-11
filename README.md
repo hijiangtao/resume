@@ -40,6 +40,17 @@ git clone https://github.com/hijiangtao/resume.git --branch master --depth 1 --s
 
 其他具体使用可参考给出的范例，都是极其简单易懂的宏，建议先看看 [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 和 [How to write a LaTeX class file and design your own CV (Part 2) - ShareLaTeX](https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 了解下该模板的简单背景，下面就一些新定义的宏做简要介绍。
 
+### makefile
+
+```
+make          # 默认执行 all，等价于 make all
+make pdf      # 编译所有 .tex -> .pdf
+make zh_CN    # 只编译简历中文版 resume-zh_CN.tex
+make en       # 编译英文版 resume.tex
+make clean    # 清除所有中间文件和 pdf
+```
+
+
 ### 宏
 
 - `\name`: 姓名
@@ -50,6 +61,9 @@ git clone https://github.com/hijiangtao/resume.git --branch master --depth 1 --s
 - `\datedsubsection`: 用于小节标题, 简历中使用最广，第二项为时间区间，自动右对齐
 - `\itemize`: 清单列表，简历中应用最广
 - `\enumerate`: 枚举列表，数字标号
+- `\mcode`: 高亮信息，效果：`highlight`
+- `\techlist`: 高亮列表，使用方式：`\techlist{a,b}`，效果：`a`, `b`
+- `\photo`: 照片，使用方法：`\photo[width=40mm,scale=0.8]{example.jpg}`或默认设置`\photo{example.jpg}`
 
 ### FontAwesome
 
